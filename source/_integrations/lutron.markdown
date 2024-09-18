@@ -47,6 +47,10 @@ It is recommended to assign a static IP address to your main repeater. This ensu
 If you are using RadioRA2 software version 12 or later, the default `lutron` user with password `integration` is not configured by default. To configure a new telnet user, go to **Settings** > **Integration** in your project and add a new telnet login. Once configured, use the transfer tab to push your changes to the RadioRA2 main repeater(s).
 {% endimportant %}
 
+## Options
+
+When a light is turned on through Home Assistant for the first time, the `lutron` integration has to pick a dimming setting. By default, it's set at 50% light output but it's configurable under the integration **Options** in Home Assistant. This setting only applies the first time a light is turned on through Home Assistant.
+
 ## Keypad buttons
 
 Keypad buttons actions are provided in event entities.
